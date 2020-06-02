@@ -358,8 +358,10 @@ ol {
 }
 
 .site-logo {
-  font-size: 24px;
-  padding-top: 20px;
+  width: 75%;
+  height: 75%;
+  /* font-size: 24px;
+  padding-top: 20px; */
 }
 
 .main-menu ul {
@@ -472,6 +474,50 @@ ol {
   letter-spacing: 0;
 }
 
+
+.portfolio-item-no-popup {
+  display: block;
+  width: 100%;
+  height: 600px;
+  background-position: center center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.portfolio-item-no-popup .pi-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: transparent;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.portfolio-item-no-popup .pi-inner h2 {
+  opacity: 0;
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  color: #fff;
+  letter-spacing: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.portfolio-item-no-popup:hover .pi-inner {
+  background: rgba(0, 20, 24, 0.8);
+}
+
+.portfolio-item-no-popup:hover .pi-inner h2 {
+  opacity: 1;
+  letter-spacing: 0;
+}
 .portfolio-meta {
   padding-bottom: 45px;
 }
@@ -577,6 +623,10 @@ ol {
 --------------------------*/
 .blog-item {
   margin-bottom: 70px;
+}
+
+.related-projects {
+  margin-top: 5em;
 }
 
 .blog-item .read-more {
@@ -689,6 +739,9 @@ ol {
   .portfolio-item {
     height: 450px;
   }
+  .portfolio-item-no-popup {
+    height: 450px;
+  }
 }
 
 /* Tablet :768px. */
@@ -697,6 +750,9 @@ ol {
     padding: 0 30px;
   }
   .portfolio-item {
+    height: 350px;
+  }
+  .portfolio-item-no-popup {
     height: 350px;
   }
 }
@@ -736,9 +792,8 @@ ol {
   .nav-switch {
     position: absolute;
     right: 25px;
-    font-size: 30px;
-    color: #333;
-    top: 35px;
+    font-size: 15px;
+    top: 10px;
     display: block;
   }
   .header-btn {

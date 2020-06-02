@@ -26,17 +26,6 @@ $(window).on('load', function() {
 
 
 (function($) {
-
-	/*------------------
-		Navigation
-	--------------------*/
-	$('.nav-switch').on('click', function(event) {
-		$('.main-menu').slideToggle(400);
-		event.preventDefault();
-	});
-
-
-
 	/*------------------
 		Background set
 	--------------------*/
@@ -64,6 +53,10 @@ $(window).on('load', function() {
 		$(this).height(pi_width + 50);
 	});
 
+	$('.portfolio-item-no-popup.pi-style2').each(function() {
+		var pi_width = $(this).width();
+		$(this).height(pi_width + 50);
+	});
 
 
 	/*------------------
