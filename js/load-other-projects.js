@@ -3,6 +3,11 @@
  *      Dynamically load other projects on project pages.
  */
 'use strict';
+
+$(document).ready(function() {
+    $('#other-projects').load("/template/other-projects.html");
+});
+
 const NUM_PROJECTS = 4;
 setTimeout(() => {
     $.getJSON("/projects/project-info.json", json => {    
