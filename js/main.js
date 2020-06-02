@@ -59,7 +59,6 @@ $(window).on('load', function() {
 		$(this).height(pi_width + 50);
 	});
 
-
 	/*------------------
 		Popup
 	--------------------*/
@@ -68,7 +67,6 @@ $(window).on('load', function() {
 		mainClass: 'img-popup-warp',
 		removalDelay: 400,
 	});
-
 
 	/*------------------
 		Accordions

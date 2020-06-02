@@ -10,8 +10,11 @@ const loadCarousel = images => {
         for(var img of images) {
             var carouselImage = `
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="${img}">
-                </div>`;
+                <a class="project-item" href="${img}">
+                    <img class="portfolio-item pi-style2" src="${img}">
+                </a>
+                </div>
+            `;
                 carouselImages.push(carouselImage);
         }
         var projectCarouselEl = document.getElementById("projectCarousel");
@@ -20,5 +23,11 @@ const loadCarousel = images => {
         carouselInnerEl.innerHTML = carouselImages.join("\n");
         carouselInnerEl.firstElementChild.className += " active";
         $(projectCarouselEl).carousel({slide : true, ride : true });
+
+        $('.project-item').magnificPopup({
+            type: 'image',
+            mainClass: 'img-popup-warp',
+            removalDelay: 400,
+        });
     }, 100)
 }
