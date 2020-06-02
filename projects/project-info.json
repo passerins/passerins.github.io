@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Example Project One",
+        "caption": "Example One",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/example.html"
+    },
+    {
+        "name": "Example Project Two",
+        "caption": "Example Two",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/example2.html"
+    },
+    {
+        "name": "Example Project Three",
+        "caption": "Example Three",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/exampl3.html"
+    },
+    {
+        "name": "Example Project Four",
+        "caption": "Example Four",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/example4.html"
+    },
+    {
+        "name": "Example Project Five",
+        "caption": "Example Five",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/example5.html"
+    }
+]
