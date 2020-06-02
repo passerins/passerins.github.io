@@ -474,6 +474,13 @@ ol {
   letter-spacing: 0;
 }
 
+.other-project-container:hover .other-project-thumb {
+  opacity: 0.8;
+}
+
+.other-project-container:hover {
+  background: rgba(0, 20, 24, 0.8);
+}
 
 .portfolio-item-no-popup {
   display: block;
@@ -518,6 +525,9 @@ ol {
   opacity: 1;
   letter-spacing: 0;
 }
+
+
+
 .portfolio-meta {
   padding-bottom: 45px;
 }

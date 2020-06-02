@@ -46,6 +46,7 @@ $(window).on('load', function() {
 	if ($(window).width() > 991) {
 		port_fi.appendTo('.portfolio-intro');
 		port_si.find('.portfolio-item').height(port_intro_h + 601);
+		port_si.find('.portfolio-item-big').height(port_intro_h + 601);
 	}
 
 	$('.portfolio-item.pi-style2').each(function() {
