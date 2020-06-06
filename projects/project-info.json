@@ -1,32 +1,62 @@
 [
     {
-        "name": "Example Project One",
-        "caption": "Example One",
+        "name": "Graphic Design - 'The Apostrophe'",
+        "caption": "Graphic Design - 'The Apostrophe'",
         "thumbnail_uri":"http://placehold.it/500x500",
-        "project_uri":"/projects/example.html"
+        "project_uri":"/projects/apostrophe.html"
     },
     {
-        "name": "Example Project Two",
-        "caption": "Example Two",
+        "name": "Communication Capstone",
+        "caption": "Communication Capstone",
         "thumbnail_uri":"http://placehold.it/500x500",
-        "project_uri":"/projects/example2.html"
+        "project_uri":"/projects/capstone.html"
     },
     {
-        "name": "Example Project Three",
-        "caption": "Example Three",
+        "name": "Graphic Design - Catpeas' Corner",
+        "caption": "Graphic Design - Catpeas' Corner",
         "thumbnail_uri":"http://placehold.it/500x500",
-        "project_uri":"/projects/exampl3.html"
+        "project_uri":"/projects/catpeas-corner.html"
     },
     {
-        "name": "Example Project Four",
-        "caption": "Example Four",
+        "name": "Social Media Strategy - Counting Women's Work",
+        "caption": "Social Media Strategy - CWW",
         "thumbnail_uri":"http://placehold.it/500x500",
-        "project_uri":"/projects/example4.html"
+        "project_uri":"/projects/cww.html"
     },
     {
-        "name": "Example Project Five",
-        "caption": "Example Five",
+        "name": "Graphic Design - Fetish Poster",
+        "caption": "Graphic Design - Poster",
         "thumbnail_uri":"http://placehold.it/500x500",
-        "project_uri":"/projects/example5.html"
+        "project_uri":"/projects/fetish.html"
+    },
+    {
+        "name": "Graphic Design - Magazine Sample",
+        "caption": "Graphic Design - Magazine",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/fish-finatic.html"
+    },
+    {
+        "name": "Content Creation - Movie Trailer",
+        "caption": "Content Creation - Movie Trailer",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/gotta-have-it.html"
+    },
+    {
+        "name": "Technical Writing Example",
+        "caption": "Technical Writing Example",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/portugal-social-media.html"
+    },
+    {
+        "name": "Graphic Design - Ride My Road",
+        "caption": "Graphic Design - Ride My Road",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/ride-my-road.html"
+    },
+    {
+        "name": "Social Media Strategy - SOU",
+        "caption": "Social Media Strategy - SOU",
+        "thumbnail_uri":"http://placehold.it/500x500",
+        "project_uri":"/projects/sou-communication.html"
     }
 ]

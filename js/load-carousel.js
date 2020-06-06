@@ -9,9 +9,9 @@ const loadCarousel = images => {
         const carouselImages = [];
         for(var img of images) {
             var carouselImage = `
-                <div class="carousel-item">
+                <div class="carousel-item text-center">
                 <a class="project-item" href="${img}">
-                    <img class="portfolio-item pi-style2" src="${img}">
+                    <img class="" src="${img}">
                 </a>
                 </div>
             `;
