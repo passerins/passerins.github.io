@@ -1,62 +1,84 @@
 [
     {
-        "name": "Graphic Design - 'The Apostrophe'",
+        "name": "SOU Communication Program",
+        "caption": "Social Media Strategy - SOU",
+        "thumbnail_uri":"https://placehold.it/500x500",
+        "project_uri":"/projects/sou-communication.html",
+        "frontpage_img_uri": "/img/portfolio/1.jpg",
+        "category": "social-media",
+        "first_item": true
+    },  
+    {
+        "name": "Counting Women's Work",
+        "caption": "Social Media Strategy - CWW",
+        "thumbnail_uri":"https://placehold.it/500x500",
+        "project_uri":"/projects/cww.html",
+        "frontpage_img_uri": "/img/portfolio/2.jpg",
+        "category": "social-media",
+        "second_item": true
+    },
+    {
+        "name": "'The Apostrophe'",
         "caption": "Graphic Design - 'The Apostrophe'",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/apostrophe.html"
+        "project_uri":"/projects/apostrophe.html",
+        "frontpage_img_uri": "",
+        "category": "graphic-design"
     },
     {
         "name": "Communication Capstone",
         "caption": "Communication Capstone",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/capstone.html"
+        "project_uri":"/projects/capstone.html",
+        "frontpage_img_uri": "",
+        "category": "writing"
     },
     {
-        "name": "Graphic Design - Catpeas' Corner",
+        "name": "Catpeas' Corner",
         "caption": "Graphic Design - Catpeas' Corner",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/catpeas-corner.html"
+        "project_uri":"/projects/catpeas-corner.html",
+        "frontpage_img_uri": "",
+        "category": "graphic-design"
     },
     {
-        "name": "Social Media Strategy - Counting Women's Work",
-        "caption": "Social Media Strategy - CWW",
-        "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/cww.html"
-    },
-    {
-        "name": "Graphic Design - Fetish Poster",
+        "name": "Informational Poster",
         "caption": "Graphic Design - Poster",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/fetish.html"
+        "project_uri":"/projects/fetish.html",
+        "frontpage_img_uri": "",
+        "category": "graphic-design"
     },
     {
-        "name": "Graphic Design - Magazine Sample",
+        "name": "Magazine Sample - Fish Finatic",
         "caption": "Graphic Design - Magazine",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/fish-finatic.html"
+        "project_uri":"/projects/fish-finatic.html",
+        "frontpage_img_uri": "",
+        "category": "graphic-design"
     },
     {
-        "name": "Content Creation - Movie Trailer",
+        "name": "Content Creation - Movie Trailer Remake",
         "caption": "Content Creation - Movie Trailer",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/gotta-have-it.html"
+        "project_uri":"/projects/gotta-have-it.html",
+        "frontpage_img_uri": "",
+        "category": "misc"
     },
     {
         "name": "Technical Writing Example",
         "caption": "Technical Writing Example",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/portugal-social-media.html"
+        "project_uri":"/projects/portugal-social-media.html",
+        "frontpage_img_uri": "",
+        "category": "writing"
     },
     {
-        "name": "Graphic Design - Ride My Road",
+        "name": "Ride My Road",
         "caption": "Graphic Design - Ride My Road",
         "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/ride-my-road.html"
-    },
-    {
-        "name": "Social Media Strategy - SOU",
-        "caption": "Social Media Strategy - SOU",
-        "thumbnail_uri":"https://placehold.it/500x500",
-        "project_uri":"/projects/sou-communication.html"
+        "project_uri":"/projects/ride-my-road.html",
+        "frontpage_img_uri": "",
+        "category": "graphic-design"
     }
 ]
