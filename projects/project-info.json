@@ -4,7 +4,7 @@
         "caption": "Social Media Strategy - SOU",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/sou-communication.html",
-        "frontpage_img_uri": "/img/portfolio/1.jpg",
+        "frontpage_img_uri": "/img/portfolio/soucomm.jpg",
         "category": "social-media",
         "first_item": true
     },  
@@ -13,7 +13,7 @@
         "caption": "Social Media Strategy - CWW",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/cww.html",
-        "frontpage_img_uri": "/img/portfolio/2.jpg",
+        "frontpage_img_uri": "/img/portfolio/cww.jpg",
         "category": "social-media",
         "second_item": true
     },
@@ -22,7 +22,7 @@
         "caption": "Graphic Design - 'The Apostrophe'",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/apostrophe.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/apost.jpg",
         "category": "graphic-design"
     },
     {
@@ -30,7 +30,7 @@
         "caption": "Communication Capstone",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/capstone.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/capstone.jpg",
         "category": "writing"
     },
     {
@@ -38,7 +38,7 @@
         "caption": "Graphic Design - Catpeas' Corner",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/catpeas-corner.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/peas.jpg",
         "category": "graphic-design"
     },
     {
@@ -46,7 +46,7 @@
         "caption": "Graphic Design - Poster",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/fetish.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/posterv2.jpg",
         "category": "graphic-design"
     },
     {
@@ -54,7 +54,7 @@
         "caption": "Graphic Design - Magazine",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/fish-finatic.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/1.jpg",
         "category": "graphic-design"
     },
     {
@@ -62,7 +62,7 @@
         "caption": "Content Creation - Movie Trailer",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/gotta-have-it.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/gottahave.jpg",
         "category": "misc"
     },
     {
@@ -70,7 +70,7 @@
         "caption": "Technical Writing Example",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/portugal-social-media.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/1.jpg",
         "category": "writing"
     },
     {
@@ -78,7 +78,7 @@
         "caption": "Graphic Design - Ride My Road",
         "thumbnail_uri":"https://placehold.it/500x500",
         "project_uri":"/projects/ride-my-road.html",
-        "frontpage_img_uri": "",
+        "frontpage_img_uri": "/img/portfolio/ridemyroad.jpg",
         "category": "graphic-design"
     }
 ]
