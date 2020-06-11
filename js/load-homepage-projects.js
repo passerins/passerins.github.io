@@ -108,7 +108,7 @@ $.getJSON("/projects/project-info.json", json => {
             }
             e.preventDefault();
         });
-    }, 100);
+    }, 200);
 });
 
 const convertCategory = category => {
