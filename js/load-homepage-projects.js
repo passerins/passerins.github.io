@@ -95,18 +95,20 @@ $.getJSON("/projects/project-info.json", json => {
         mainClass: 'img-popup-warp',
         removalDelay: 400,
     });
-
-    /*------------------
-		Accordions
-	--------------------*/
-	$('.panel-link').on('click', function (e) {
-		$('.panel-link').parent('.panel-header').removeClass('active');
-		var $this = $(this).parent('.panel-header');
-		if (!$this.hasClass('active')) {
-			$this.addClass('active');
-		}
-		e.preventDefault();
-	});
+}).then(() => {
+    setTimeout(() => {
+        /*------------------
+            Accordions
+        --------------------*/
+        $('.panel-link').on('click', function (e) {
+            $('.panel-link').parent('.panel-header').removeClass('active');
+            var $this = $(this).parent('.panel-header');
+            if (!$this.hasClass('active')) {
+                $this.addClass('active');
+            }
+            e.preventDefault();
+        });
+    }, 100);
 });
 
 const convertCategory = category => {
