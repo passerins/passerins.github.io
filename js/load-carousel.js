@@ -7,15 +7,26 @@ const loadCarousel = images => {
     $('#carousel-container').load("/template/carousel.html");
     setTimeout(() => {
         const carouselImages = [];
-        for(var img of images) {
-            var carouselImage = `
-                <div class="carousel-item text-center">
-                <a class="project-item" href="${img}">
-                    <img class="" src="${img}">
-                </a>
-                </div>
-            `;
-                carouselImages.push(carouselImage);
+        for(let img of images) {
+            let carouselImage;
+            if($.type(img) === "string"){
+                carouselImage = `
+                    <div class="carousel-item text-center">
+                    <a class="project-item" href="${img}">
+                        <img class="" src="${img}">
+                    </a>
+                    </div>
+                `;
+            } else {
+                carouselImage = `
+                    <div class="carousel-item text-center">
+                    <a class="project-item" href="${img.link}">
+                        <img class="" src="${img.preview}">
+                    </a>
+                    </div>
+                `;
+            }
+            carouselImages.push(carouselImage);
         }
         var projectCarouselEl = document.getElementById("projectCarousel");
         var carouselInnerEl = projectCarouselEl.getElementsByClassName("carousel-inner")[0];
