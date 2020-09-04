@@ -56,6 +56,11 @@ $.getJSON("/projects/project-info.json", json => {
 
     });
 
+    if($('.portfolios-area').length > 0 ) {
+		var containerEl = document.querySelector('.portfolios-area');
+		var mixer = mixitup(containerEl);
+	}
+
     /*------------------
 		Background set
 	--------------------*/
@@ -95,20 +100,17 @@ $.getJSON("/projects/project-info.json", json => {
         mainClass: 'img-popup-warp',
         removalDelay: 400,
     });
-}).then(() => {
-    setTimeout(() => {
-        /*------------------
-            Accordions
-        --------------------*/
-        $('.panel-link').on('click', function (e) {
-            $('.panel-link').parent('.panel-header').removeClass('active');
-            var $this = $(this).parent('.panel-header');
-            if (!$this.hasClass('active')) {
-                $this.addClass('active');
-            }
-            e.preventDefault();
-        });
-    }, 200);
+    /*------------------
+        Accordions
+    --------------------*/
+    $('.panel-link').on('click', function (e) {
+        $('.panel-link').parent('.panel-header').removeClass('active');
+        var $this = $(this).parent('.panel-header');
+        if (!$this.hasClass('active')) {
+            $this.addClass('active');
+        }
+        e.preventDefault();
+    });
 });
 
 const convertCategory = category => {
