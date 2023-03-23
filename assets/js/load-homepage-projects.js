@@ -5,22 +5,17 @@
 'use strict';  
 
 
+// Create dynamic post categories
 $.getJSON("/posts.json", json => {    
-
     const categories = new Map();
     console.log("Post json: ", json);
     json.forEach(post => {
         post.categories.forEach(category => categories.set(cleanCategory(category), category))
     })
 
-    console.log("Category map: ", categories);
-
-
     categories.forEach((name, element) => {
         $('#potfolio-controls').append(`<li class="control" data-filter=".${element}">${name}</li>`);
     })
-
-
 });
 
 
