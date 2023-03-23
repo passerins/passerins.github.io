@@ -12,7 +12,7 @@ $.getJSON("/projects/project-info.json", json => {
         let htmlInject;
         if(proj.first_item) {
             htmlInject = `				
-            <div class="first-item col-md-6 col-lg-12 mix ${proj.category} p-lg-0">
+            <div class="first-item col-md-6 col-lg-12 mix ${splitCategories(proj.categories)} p-lg-0">
                 <a href="${proj.project_uri}" class="portfolio-item-big portfolio-item-no-popup set-bg " data-setbg="${proj.frontpage_img_uri}">
                     <div class="pi-inner">
                         <h2>+ See Project</h2>
@@ -20,13 +20,13 @@ $.getJSON("/projects/project-info.json", json => {
                 </a>
                 <div class="portfolio-meta">
                     <h2>${proj.name}</h2>
-                    <p>${convertCategory(proj.category)}</p>
+                    <p>${convertCategories(proj.categories)}</p>
                 </div>
             </div>`
         } 
         else if(proj.second_item) {
             htmlInject = `
-            <div class="second-item mix col-md-6 ${proj.category}">
+            <div class="second-item mix col-md-6 ${splitCategories(proj.categories)}">
                 <a href="${proj.project_uri}" class="portfolio-item-big portfolio-item-no-popup set-bg" data-setbg="${proj.frontpage_img_uri}">
                     <div class="pi-inner">
                         <h2>+ See Project</h2>
@@ -34,12 +34,12 @@ $.getJSON("/projects/project-info.json", json => {
                 </a>
                 <div class="portfolio-meta">
                     <h2>${proj.name}</h2>
-                    <p>${convertCategory(proj.category)}</p>
+                    <p>${convertCategories(proj.categories)}</p>
                 </div>
             </div>`
         } else {
             htmlInject = `
-            <div class="mix col-md-6 col-lg-3 ${proj.category}">
+            <div class="mix col-md-6 col-lg-3 ${splitCategories(proj.categories)}">
                 <a href="${proj.project_uri}" class="portfolio-item-no-popup pi-style2 set-bg" data-setbg="${proj.frontpage_img_uri}">
                     <div class="pi-inner">
                         <h2>+ See Project</h2>
@@ -47,7 +47,7 @@ $.getJSON("/projects/project-info.json", json => {
                 </a>
                 <div class="portfolio-meta">
                     <h2>${proj.name}</h2>
-                    <p>${convertCategory(proj.category)}</p>
+                    <p>${convertCategories(proj.categories)}</p>
                 </div>
             </div>`
         }
@@ -113,16 +113,22 @@ $.getJSON("/projects/project-info.json", json => {
     });
 });
 
+const splitCategories = categories => categories.join(" ");
+
+const convertCategories = categories => {
+    return categories.map(cat => convertCategory(cat)).join(", ");
+}
+
 const convertCategory = category => {
     switch(category) {
         case "social-media":
-            return "Social Media Strategy";
+            return "Social Media";
         case "writing":
             return "Writing";
-        case "graphic-design":
-            return "Graphic Design";
+        case "content-creation":
+            return "Content Creation";
         case "misc":
-            return "Misc";
+            return "Misc.";
         default:
             return "UNKNOWN";
     }

@@ -1,84 +1,44 @@
 [
     {
         "name": "SOU Communication Program",
-        "caption": "Social Media Strategy - SOU",
+        "caption": "Social Media and Writing - SOU",
         "thumbnail_uri":"/img/portfolio/thumb/soucomm.jpg",
         "project_uri":"/projects/sou-communication.html",
         "frontpage_img_uri": "/img/portfolio/soucomm.jpg",
-        "category": "social-media",
+        "categories": ["social-media", "writing"],
         "first_item": true
     },  
     {
         "name": "Counting Women's Work",
-        "caption": "Social Media Strategy - CWW",
+        "caption": "Social Media - CWW",
         "thumbnail_uri":"/img/portfolio/thumb/cww.jpg",
         "project_uri":"/projects/cww.html",
         "frontpage_img_uri": "/img/portfolio/cww.jpg",
-        "category": "social-media",
+        "categories": ["social-media"],
         "second_item": true
     },
     {
-        "name": "'The Apostrophe'",
-        "caption": "Graphic Design - 'The Apostrophe'",
-        "thumbnail_uri":"/img/portfolio/thumb/apost.jpg",
-        "project_uri":"/projects/apostrophe.html",
-        "frontpage_img_uri": "/img/portfolio/apost.jpg",
-        "category": "graphic-design"
-    },
-    {
-        "name": "Communication Capstone",
-        "caption": "Communication Capstone",
-        "thumbnail_uri":"/img/portfolio/thumb/capstone.jpg",
-        "project_uri":"/projects/capstone.html",
-        "frontpage_img_uri": "/img/portfolio/capstone.jpg",
-        "category": "writing"
-    },
-    {
-        "name": "Catpeas' Corner",
-        "caption": "Graphic Design - Catpeas' Corner",
-        "thumbnail_uri":"/img/portfolio/thumb/peas.jpg",
-        "project_uri":"/projects/catpeas-corner.html",
-        "frontpage_img_uri": "/img/portfolio/peas.jpg",
-        "category": "graphic-design"
-    },
-    {
-        "name": "Informational Poster",
-        "caption": "Graphic Design - Poster",
-        "thumbnail_uri":"/img/portfolio/thumb/posterv2.jpg",
-        "project_uri":"/projects/fetish.html",
-        "frontpage_img_uri": "/img/portfolio/posterv2.jpg",
-        "category": "graphic-design"
-    },
-    {
-        "name": "Magazine Sample - Fish Finatic",
-        "caption": "Graphic Design - Magazine",
+        "name": "Fish Finatic - Magazine Sample",
+        "caption": "Misc - Graphic Design",
         "thumbnail_uri":"/img/portfolio/thumb/fish.jpg",
         "project_uri":"/projects/fish-finatic.html",
         "frontpage_img_uri": "/img/portfolio/fish.jpg",
-        "category": "graphic-design"
+        "categories": ["misc"]
     },
     {
-        "name": "Content Creation - Movie Trailer Remake",
+        "name": "'She's Gotta Have It' Trailer Remake",
         "caption": "Content Creation - Movie Trailer",
         "thumbnail_uri":"/img/portfolio/thumb/gottahave.jpg",
         "project_uri":"/projects/gotta-have-it.html",
         "frontpage_img_uri": "/img/portfolio/gottahave.jpg",
-        "category": "misc"
+        "categories": ["content-creation"]
     },
     {
-        "name": "Technical Writing Example",
-        "caption": "Technical Writing Example",
-        "thumbnail_uri":"/img/portfolio/thumb/writingv2.jpg",
-        "project_uri":"/projects/portugal-social-media.html",
-        "frontpage_img_uri": "/img/portfolio/writingv2.jpg",
-        "category": "writing"
-    },
-    {
-        "name": "Ride My Road",
-        "caption": "Graphic Design - Ride My Road",
+        "name": "Ride My Road&#8482;",
+        "caption": "Ride My Road&#8482;",
         "thumbnail_uri":"/img/portfolio/thumb/ridemyroad.jpg",
         "project_uri":"/projects/ride-my-road.html",
         "frontpage_img_uri": "/img/portfolio/ridemyroad.jpg",
-        "category": "graphic-design"
+        "categories": ["content-creation"]
     }
 ]

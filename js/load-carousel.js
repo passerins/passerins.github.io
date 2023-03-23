@@ -4,8 +4,7 @@
 */
 'use strict';
 const loadCarousel = images => {
-    $('#carousel-container').load("/template/carousel.html");
-    setTimeout(() => {
+    $('#carousel-container').load("/template/carousel.html", () => {
         const carouselImages = [];
         for(let img of images) {
             let carouselImage;
@@ -40,5 +39,6 @@ const loadCarousel = images => {
             mainClass: 'img-popup-warp',
             removalDelay: 400,
         });
-    }, 100)
+    });
+
 }
