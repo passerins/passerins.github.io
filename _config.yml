@@ -33,6 +33,6 @@ plugins:
   - jekyll-seo-tag
 
 header_pages:
-  - index.markdown
+  - portfolio.markdown
   - about.markdown
   - contact.markdown

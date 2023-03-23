@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<!-- page section start -->
+<section class="page-section">
+    <div class="container">
+       <!-- Portfolio Item Heading -->
+       <h1 class="my-4">{{ page.title }}
+          <small>
+            {% for category in page.categories %}
+                {{ category }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          </small>
+       </h1>
+       <!-- Portfolio Item Row -->
+       <div class="row">
+          <div class="col-md-8">
+             <div id="carousel-container">
+                {%- include carousel.html -%}
+             </div>
+          </div>
+          <div class="col-md-4">
+             <h3>Project Description</h3>
+             {{ content }}
+          </div>
+       </div>
+       <!-- /.row -->
+    </div>
+ </section>
+ <!-- page section end -->
+
+
+
+<script src="/assets/js/load-other-projects.js"></script>
+<script src="/assets/js/load-carousel.js"></script>
+
+<script>   
+    let image_links = [];
+    {% for img in page.images %}
+        image_links.push("{{img}}")
+    {% endfor %}
+    loadCarousel(image_links)
+</script>
+
+{%- include other-projects.html -%}
+{%- include contact-cta.html -%}

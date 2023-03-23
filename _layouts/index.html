@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- portfolio section start -->
+<section class="portfolio-section pt100">
+    <div class="container"></div>                       
+    <div class="container-fluid p-0">
+        <div id="portfolio-area" class="row portfolios-area">
+            <div class="col-lg-6">
+                <div class="portfolio-intro">
+                    <h2 class="section-title mb-5">A <span>kick-ass writer</span> who's written about all of it.</h2>
+                    <ul class="portfolio-filter controls">
+                        <li class="control" data-filter="all">All</li>
+                        <li class="control" data-filter=".content-creation">Content Creation</li>
+                        <li class="control" data-filter=".social-media">Social Media</li>
+                        <li class="control" data-filter=".writing">Writing</li>
+                        <li class="control" data-filter=".misc">Misc.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            {%- for post in site.posts -%}
+
+                {% if post.tags contains  'primary-post' %}
+                <div class="first-item col-md-6 col-lg-12 mix {% for category in post.categories %}{{ category | replace: " ", "-" | replace: ".", "" | downcase }} {% endfor %} p-lg-0">
+                    <a href="{{ post.url }}" class="portfolio-item-big portfolio-item-no-popup set-bg " data-setbg="{{ post.frontpage_image }}">
+                        <div class="pi-inner">
+                            <h2>+ See Project</h2>
+                        </div>			
+                    </a>
+                    <div class="portfolio-meta">
+                        <h2>{{ post.title }}</h2>
+                        <p>{% for category in post.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+                    </div>
+                </div>
+                {% elsif post.tags contains 'secondary-post' %}
+                <div class="second-item mix col-md-6 {% for category in post.categories %}{{ category | replace: " ", "-" | replace: ".", "" | downcase }} {% endfor %}">
+                    <a href="{{ post.url }}" class="portfolio-item-big portfolio-item-no-popup set-bg" data-setbg="{{ post.frontpage_image }}">
+                        <div class="pi-inner">
+                            <h2>+ See Project</h2>
+                        </div>						
+                    </a>
+                    <div class="portfolio-meta">
+                        <h2>{{ post.title }}</h2>
+                        <p>{% for category in post.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+                    </div>
+                </div>
+
+                {% else %}
+                <div class="mix col-md-6 col-lg-3 {% for category in post.categories %}{{ category | replace: " ", "-" | replace: ".", "" | downcase }} {% endfor %}">
+                    <a href="{{ post.url }}" class="portfolio-item-no-popup pi-style2 set-bg" data-setbg="{{ post.frontpage_image }}">
+                        <div class="pi-inner">
+                            <h2>+ See Project</h2>
+                        </div>						
+                    </a>
+                    <div class="portfolio-meta">
+                        <h2>{{ post.title }}</h2>
+                        <p>{% for category in post.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+                    </div>
+                </div>
+                {% endif % }
+
+
+            {%- endfor -%}
+        {%- endfor -%}
+
+        </div>
+    </div>
+</section>
+<!-- portfolio section end -->
+
+<script src="/assets/js/load-homepage-projects.js"></script>
+
+{%- include contact-cta.html -%}

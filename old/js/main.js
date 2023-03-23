@@ -112,3 +112,5 @@ if($().circleProgress){
 }
 
 })(jQuery);
+
+
