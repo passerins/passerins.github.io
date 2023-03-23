@@ -1,0 +1,24 @@
+<header class="site-header" role="banner">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="logo">
+            <a href="/"><img src="/assets/img/sign.png" class="site-logo" alt="{{ site.title | escape }}"></img></a>
+        </div>
+        <button type="button" class="nav-switch navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                {%- for path in page_paths -%}
+                    {%- assign my_page = site.pages | where: "path", path | first -%}
+                    {%- if my_page.title -%}
+                        <a href="{{ my_page.url | relative_url }}" class="nav-item nav-link">{{ my_page.title | escape }}</a>
+                    {%- endif -%}
+                {%- endfor -%}
+            </div>
+        </div>
+    </nav>
+  </header>
+  
