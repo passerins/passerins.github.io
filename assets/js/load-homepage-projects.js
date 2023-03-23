@@ -4,6 +4,29 @@
  */
 'use strict';  
 
+
+$.getJSON("/posts.json", json => {    
+
+    const categories = new Map();
+    console.log("Post json: ", json);
+    json.forEach(post => {
+        post.categories.forEach(category => categories.set(cleanCategory(category), category))
+    })
+
+    console.log("Category map: ", categories);
+
+
+    categories.forEach((name, element) => {
+        $('#potfolio-controls').append(`<li class="control" data-filter=".${element}">${name}</li>`);
+    })
+
+
+});
+
+
+const cleanCategory = category => category.replace(" ", "-").replace(".","").toLowerCase();
+
+
 if($('.portfolios-area').length > 0 ) {
     var containerEl = document.querySelector('.portfolios-area');
     var mixer = mixitup(containerEl);
@@ -60,24 +83,3 @@ $('.panel-link').on('click', function (e) {
     e.preventDefault();
 });
 
-
-const splitCategories = categories => categories.join(" ");
-
-const convertCategories = categories => {
-    return categories.map(cat => convertCategory(cat)).join(", ");
-}
-
-const convertCategory = category => {
-    switch(category) {
-        case "social-media":
-            return "Social Media";
-        case "writing":
-            return "Writing";
-        case "content-creation":
-            return "Content Creation";
-        case "misc":
-            return "Misc.";
-        default:
-            return "UNKNOWN";
-    }
-}
