@@ -1,13 +1,15 @@
 ---
-title: Reed's Crossing - Writing
+title: Reed's Crossing
 layout: project
 permalink: "/projects/reeds-crossing-writing/"
 categories:
 - Writing
 images:
-- "/assets/projects/cww/week11TT-FB.PNG"
-frontpage_image: "/assets/projects/cww/cww.jpg"
-thumbnail: "/assets/projects/cww/cww.jpg"
+- "/assets/projects/reeds-writing/sample1.png"
+- "/assets/projects/reeds-writing/sample2.png"
+- "/assets/projects/reeds-writing/sample3.png"
+frontpage_image: "/assets/projects/reeds-writing/homepage.jpg"
+thumbnail: "/assets/projects/reeds-writing/thumb.jpg"
 ---
 
 During my time as a Senior Social Media Coordinator at Liaison, I wrote numerous blogs for Reed's Crossing, a new home community in Hillsboro, Oregon. The campaign’s goal was to attract new prospective buyers and realtors to the growing master-planned community. So, I provided valuable insights and tips on home buying, decorating, and community life, through blogs centered around real estate advice and home décor inspiration, which helped cement Reed's Crossing as a reputable and trustworthy source of information for homebuyers and realtors alike. 

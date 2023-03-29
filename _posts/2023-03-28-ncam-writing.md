@@ -1,13 +1,17 @@
 ---
-title: Ncam - Writing
+title: Ncam
 layout: project
 permalink: "/projects/ncam-writing/"
 categories:
 - Writing
 images:
-- "/assets/projects/cww/week11TT-FB.PNG"
-frontpage_image: "/assets/projects/cww/cww.jpg"
-thumbnail: "/assets/projects/cww/cww.jpg"
+- "/assets/projects/ncam-writing/sample1.png"
+- "/assets/projects/ncam-writing/sample2.png"
+- "/assets/projects/ncam-writing/sample3.png"
+frontpage_image: "/assets/projects/ncam-writing/homepage.jpg"
+thumbnail: "/assets/projects/ncam-writing/thumb.jpg"
+tags:
+- primary-post
 ---
 
 During my time as a Senior Social Media Coordinator at Liaison, I wrote several blogs for Ncam Technologies, showcasing their real-time camera tracking technology and its use in various film and TV projects. Many of the blogs were in a listicle style, which effectively highlighted a range of projects and provided insights into their tech’s capabilities. 

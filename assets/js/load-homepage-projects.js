@@ -4,6 +4,8 @@
  */
 'use strict';  
 
+const cleanCategory = category => category.replace(" ", "-").replace(".","").toLowerCase();
+
 
 // Create dynamic post categories
 $.getJSON("/posts.json", json => {    
@@ -16,16 +18,13 @@ $.getJSON("/posts.json", json => {
     categories.forEach((name, element) => {
         $('#potfolio-controls').append(`<li class="control" data-filter=".${element}">${name}</li>`);
     })
+
+    if($('.portfolios-area').length > 0 ) {
+        var containerEl = document.querySelector('.portfolios-area');
+        var mixer = mixitup(containerEl);
+    }
 });
 
-
-const cleanCategory = category => category.replace(" ", "-").replace(".","").toLowerCase();
-
-
-if($('.portfolios-area').length > 0 ) {
-    var containerEl = document.querySelector('.portfolios-area');
-    var mixer = mixitup(containerEl);
-}
 
 /*------------------
     Background set

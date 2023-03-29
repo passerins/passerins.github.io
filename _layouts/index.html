@@ -21,13 +21,10 @@ layout: default
                 </div>
             </div>
 
-
-
             <!-- Display the primary post(s) first (ignore the multiple loop jank) -->
             {%- for post in site.posts -%}
             {% if post.tags contains 'primary-post' %}
-            <div class="first-item col-md-6 col-lg-12 mix {% for category in post.categories %}{{ category | replace: " ", "
-                -" | replace: "." , "" | downcase }} {% endfor %} p-lg-0">
+            <div class="first-item col-md-6 col-lg-12 mix {% for category in post.categories %}{{ category | replace: " ", "-" | replace: "." , "" | downcase }} {% endfor %} p-lg-0">
                 <a href="{{ post.url }}" class="portfolio-item-big portfolio-item-no-popup set-bg "
                     data-setbg="{{ post.frontpage_image }}">
                     <div class="pi-inner">
@@ -47,8 +44,7 @@ layout: default
             <!-- Display the secondary post(s) next (ignore the multiple loop jank) -->
             {%- for post in site.posts -%}
             {% if post.tags contains 'secondary-post' %}
-            <div class="second-item mix col-md-6 {% for category in post.categories %}{{ category | replace: " ", " -" |
-                replace: "." , "" | downcase }} {% endfor %}">
+            <div class="second-item mix col-md-6 {% for category in post.categories %}{{ category | replace: " ", "-" | replace: "." , "" | downcase }} {% endfor %}">
                 <a href="{{ post.url }}" class="portfolio-item-big portfolio-item-no-popup set-bg"
                     data-setbg="{{ post.frontpage_image }}">
                     <div class="pi-inner">
@@ -68,8 +64,7 @@ layout: default
             <!-- Display the remaining non-primary or non-secondary posts -->
             {%- for post in site.posts -%}
             {% unless post.tags contains 'primary-post' or post.tags contains 'secondary-post' %}
-            <div class="mix col-md-6 col-lg-3 {% for category in post.categories %}{{ category | replace: " ", " -" |
-                replace: "." , "" | downcase }} {% endfor %}">
+            <div class="mix col-md-6 col-lg-3 {% for category in post.categories %}{{ category | replace: " ", "-" | replace: "." , "" | downcase }} {% endfor %}">
                 <a href="{{ post.url }}" class="portfolio-item-no-popup pi-style2 set-bg"
                     data-setbg="{{ post.frontpage_image }}">
                     <div class="pi-inner">

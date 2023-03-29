@@ -1,13 +1,15 @@
 ---
-title: Liaison - Writing
+title: Liaison
 layout: project
 permalink: "/projects/liaison-writing/"
 categories:
 - Writing
 images:
-- "/assets/projects/cww/week11TT-FB.PNG"
-frontpage_image: "/assets/projects/cww/cww.jpg"
-thumbnail: "/assets/projects/cww/cww.jpg"
+- "/assets/projects/liaison-writing/sample1.png"
+- "/assets/projects/liaison-writing/sample2.png"
+- "/assets/projects/liaison-writing/sample3.png"
+frontpage_image: "/assets/projects/liaison-writing/homepage.jpg"
+thumbnail: "/assets/projects/liaison-writing/thumb.jpg"
 ---
 
 During my time as a Senior Social Media Coordinator at Liaison, I wrote case studies detailing the success of their social media and SEO efforts for a variety of clients. These case studies included the strategies, tactics, and metrics that Liaison used to achieve success on behalf of their clients. 

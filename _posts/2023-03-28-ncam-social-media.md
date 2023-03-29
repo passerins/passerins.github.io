@@ -1,13 +1,15 @@
 ---
-title: Ncam - Social Media
+title: Ncam
 layout: project
 permalink: "/projects/ncam-social/"
 categories:
 - Social Media
 images:
-- "/assets/projects/cww/week11TT-FB.PNG"
-frontpage_image: "/assets/projects/cww/cww.jpg"
-thumbnail: "/assets/projects/cww/cww.jpg"
+- "/assets/projects/ncam-social/sample1.png"
+- "/assets/projects/ncam-social/sample2.png"
+- "/assets/projects/ncam-social/sample3.png"
+frontpage_image: "/assets/projects/ncam-social/homepage.jpg"
+thumbnail: "/assets/projects/ncam-social/thumb.jpg"
 ---
 
 During my time as a Senior Social Media Coordinator at Liaison, I developed and executed social media marketing strategies for Ncam Technologies. Using my experience in social media management, I crafted engaging and informative posts for the brand's social media platforms, which helped to increase engagement, expand the brand's reach, and potentially helped them acquire new customers. 
